@@ -1,0 +1,183 @@
+
+
+
+/* FUENTES */
+@font-face {
+    font-family: Titulos;
+    src: url("../fonts/Yellow.ttf");
+}
+
+@font-face {
+    font-family: Textos;
+    src: url("../fonts/Montserrat.ttf");
+}
+
+/* ESPECIFICACIONES 
+
+H1 y H2 - Fuente Titulos
+A, P y H3 - Fuente Textos
+
+H1 - TAMAÑO 4EM Y OPACIDAD 0.8
+H2 - TAMAÑO 3.5EM
+H3 TAMAÑO 1.2 EM Y LETTER SPACING 3PX
+P Y PIE DE FOTO TAMAÑO 0.7EM Y LETTER SPACING 1PX
+
+COLORES
+WHITE 
+BLACK
+GREY
+rgb(65, 65, 65)
+rgb(196, 196, 196) - BORDE FOOTER
+rgb(237, 218, 13) - HOVER IR ARRIBA
+
+IMAGEN DEL LOGO: ANCHO 100PX
+
+SECCION INICIAL HELADO ARTESANAL: ALTURA 70 DEL VIEWPORT
+
+*/
+
+/* COMIENZA CSS DEL SITIO */
+
+html{
+    scroll-behavior: smooth;
+}
+/* HEADER */
+header{
+    background-color: black;
+    height: 40%;
+}
+header figure img{
+    width: 100px;
+}
+
+header ul li a{
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px;
+
+
+    transition: background-color 0.6s;
+    transition: padding 0.6s;
+
+}
+
+header ul li a:hover{
+    background-color: white;
+    color:black;
+    padding: 15px;
+}
+
+/* SECTION 1 */
+section:nth-of-type(1){
+    background-color: grey;
+    height: 70vh;
+    background-image: url(../img/cocinero.png);
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+section:nth-of-type(1) h1{
+    color: white;
+    font-family: Titulos;
+    font-size: 80px;
+}
+
+/* SECTION 2 / SABORES */
+
+section:nth-of-type(2) h1{
+    font-family: Titulos;
+    color: rgb(65, 65, 65);
+}
+
+section:nth-of-type(2) h2{
+    font-family: Textos;
+    letter-spacing: 1px;
+    color: rgb(65, 65, 65);
+}
+
+section:nth-of-type(2) article p{
+    font-family: Textos;
+    letter-spacing: 1px;
+}
+
+/* SECTION 3  */
+
+section:nth-of-type(3){
+    background-image: url(../img/marble.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(3) h1{
+    font-family: Titulos;
+    color: rgb(65, 65, 65);
+
+}
+
+section:nth-of-type(3)  p{
+    font-family: Textos;
+    letter-spacing: 1px;
+    color: rgb(65, 65, 65);
+}
+
+
+
+/* SECTION 4 */
+section:nth-of-type(4){
+    align-items: center;
+}
+section:nth-of-type(4) p{
+    font-family: Textos;
+    letter-spacing: 1px;
+    color: rgb(65, 65, 65);
+}
+
+section:nth-of-type(4) h1{
+    font-family: Titulos;
+    color: rgb(65, 65, 65);
+}
+
+section:nth-of-type(4) article{
+    text-align: center;
+}
+
+/* SECTION 5 / FORMULARIO */
+section:nth-of-type(5){
+    background-image: url(../img/news.png);
+    background-size: cover;
+    height: 90px;
+    border-top: 2px solid black;
+}
+
+section:nth-of-type(5) form{
+    font-family: Textos;
+}
+
+input[type="email"]{
+    width: 40%;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: black;
+    width: 15%;
+}
+
+/* FOOTER */
+footer{
+    border-top: 2px solid rgb(196, 196, 196);
+}
+
+footer a{
+    text-align: end;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: rgb(237, 218, 13);
+}
+

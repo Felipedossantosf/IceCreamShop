@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lucciano`s Heladeria</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+       <meta name="keywords" content="heladeria, helado, nueva">
+       <meta name="description" content="heladeria nueva en punta carretas">
+        
+       <!--Primero el móvil, no tender a hacer zoom, sino levantar a escala natural siempre y cuando haya
+       sido pensado como un sitio responsive, y anular el comportamiento de ajustar a los límites del dispositivo
+       el contenido, cuando este sobresalga-->
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <!--Bootstrap CSS-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <!--CSS Propio-->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+
+        <!-- JavaScript -->
+        <!-- Popper.js + Bootstrap JS o Boostrap con Popper inc. -->
+        <script src="js/bootstrap.bundle.js"></script>
+        <!--<script src="js/popper.min.js"></script>-->
+        <!--<script src="js/bootstrap.js"></script>-->
+
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <!-- CABEZAL -->
+            <header class="row justify-content-center align-items-center pt-3" id="cabezal">
+                <figure class="col-12 col-lg-4 p-lg-3 text-center p-3"><img src="img/logo.svg" class="img-fluid" alt=""></figure>
+                <ul class="list-inline col-12 col-lg-6 pb-lg-0 text-center pb-3">
+                    <li class="list-inline-item"><a href="#sabores" class="rounded">Sabores</a></li>
+                    <li class="list-inline-item"><a href="#galeria" class="rounded">Galeria</a></li>
+                    <li class="list-inline-item"><a href="#tienda" class="rounded">Tienda</a></li>
+                    <li class="list-inline-item"><a href="#" class="rounded">Novedades</a></li>´
+                </ul>
+            </header>
+
+            <!-- SECTION 1  -->
+            <section class="row">
+                <h1 class="col-12 text-center p-3">el mejor helado artesanal</h1>
+            </section>
+
+            <!-- SECTION 2 / SABORES -->
+            <section class="row justify-content-center" id="sabores">
+                <h2 class="col-12 text-center text-uppercase">descubrì</h2>
+                <h1 class="col-12 text-center">nuestros sabores</h1>
+                <article class="d-sm-none d-md-block col-8 col-md-5 col-lg-2">
+                    <figure><img src="/img/gusto-1.png" class="img-fluid" alt=""></figure>
+                    <h2 class="text-uppercase">strawberry</h2>
+                    <p>Made with fresh strawberries from our region.</p>
+                </article>
+                <article class="col-8 col-sm-8 col-md-5 col-lg-2">
+                    <figure><img src="/img/gusto-2.png" class="img-fluid" alt=""></figure>
+                    <h2 class="text-uppercase">cookies</h2>
+                    <p>Whipped cream gelato with cookie swirls, developed exclusively by Lucciano`s in Italy.</p>
+                </article>
+                <article class="d-sm-none d-md-block col-8 col-md-5 col-lg-2">
+                    <figure><img src="/img/gusto-3.png" class="img-fluid" alt=""></figure>
+                    <h2 class="text-uppercase">tiramisù</h2>
+                    <p>Inspired by the classic italian dessert with a super creamy mascarpone cheese.</p>
+                </article>
+                <article class="col-8 col-sm-8 col-md-5 col-lg-2">
+                    <figure><img src="/img/gusto-4.png" class="img-fluid" alt=""></figure>
+                    <h2 class="text-uppercase">lime</h2>
+                    <p>Gelato made with freshly squeezed lime juice.</p>
+                </article>
+            </section>
+
+            <!-- SECTION 3 / GALERIA -->
+            <section class="row justify-content-center m-2 p-5" id="galeria">
+                <p class="col-12 text-uppercase text-center pt-2">disfruta nuestra</h2>
+                <h1 class="col-12 text-center">Galerìa</h1>
+                <article class="col-sm-12 col-md-5 col-lg-3">
+                    <figure><img src="/img/galeria-1.jpeg" class="img-fluid" alt=""></figure>
+                    <p class="text-center">Local Mostrador</p>
+                </article>
+                <article class="d-none d-sm-block col-md-5 col-lg-3">
+                    <figure><img src="/img/galeria-2.jpeg" class="img-fluid" alt=""></figure>
+                    <p class="text-center">Local Decoraciòn</p>
+                </article>
+                <article class="d-none d-sm-block col-sm-12 col-md-5 col-lg-3">
+                    <figure><img src="/img/galeria-3.jpeg" class="img-fluid" alt=""></figure>
+                    <p class="text-center">Local Neòn</p>
+                </article>
+                <article class="d-none d-sm-block col-12 col-md-5 col-lg-3">
+                    <figure><img src="/img/galeria-4.jpeg" class="img-fluid" alt=""></figure>
+                    <p class="text-center">Local Global</p>
+                </article>                
+            </section>
+
+
+            <!-- SECTION 4 / STORE -->
+            <section class="row justify-content-center p-5 p-lg-3" id="tienda">
+                
+                <figure class="d-md-none d-lg-block col-lg-5 d-md-none d-lg-block"><img src="/img/store.jpeg" class="img-fluid" alt=""></figure>
+                <article class="d-md-none d-lg-block col-lg-3">
+                    <p class="text-center text-uppercase">store</p>
+                    <h1>Punta Carretas</h1>
+                    <p>El helado artesanal de Lucciano`s llego a Punta Carretas. Su primer local en Uruguay ocupa 500 metros cuadrados.</p>
+                </article>
+            </section>
+
+            <!-- SECTION 5 / FORMULARIO -->
+            <section class="row justify-content-center  d-none d-sm-block pt-1 p-sm-4">
+                <form action="#" class="col-12 text-center">
+                   <input type="email" placeholder="Ingresa tu e-mail">     
+                   <input type="submit" value="Suscribite">
+                </form>
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="row">
+                <p class="col-lg-6 justify-content-lg-start">@ 2022 - Todos los derechos reservados</p>
+                <a href="#cabezal" class="col-lg-6 text-uppercase justify-content-end ">ir arriba</a>
+            </footer>
+        </main>
+
+
+
+
+        
+    </body>
+</html>
